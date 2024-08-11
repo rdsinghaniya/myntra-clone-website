@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+    /* body {
+        display: block;
+        margin: 8px;
+    } */
+    /* :not(svg) {
+    transform-origin: 0px 0px;
+} */
+.iz-news-hub-bell {
+    width: 38px;
+    height: 38px;
+    stroke: white;
+    transform: rotate(0deg);
+}
+.iz-news-hub-ripple-bell {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    background-color: #1d85fc;
+    cursor: pointer;
+    z-index: 2147483647;
+    width: 44px;
+    height: 44px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+
+.iz-news-hub-ripple-bell:before {
+    animation: ripple-before 1.5s linear infinite;
+}
+.iz-news-hub-ripple-bell:before, .iz-news-hub-ripple-bell:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+@keyframes ripple-before{
+0% {
+    transform: scale(0);
+}
+20% {
+    border-color: #1194FF;
+    transform: scale(1);
+}
+100% {
+    border-color: transparent;
+    transform: scale(1.5);
+}
+}
+
+.iz-news-hub-ripple-bell:after {
+    animation: ripple-after 1.8s linear infinite;
+}
+
+@keyframes ripple-after {
+0% {
+    transform: scale(0);
+}
+40% {
+    border-color: #1194FF;
+    transform: scale(1);
+}
+100% {
+    border-color: transparent;
+    transform: scale(1.5);
+}
+}
+
+/* dffffff */
+element.style {
+    display: flex;
+}
+@media screen and (max-width: 410px){
+#iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-right, #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-right {
+    left: unset;
+    right: 5px;
+}
+}
+#iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-right {
+    bottom: 80px;
+    right: 21px;
+}
+
+@media screen and (max-width: 360px){
+.iz-news-hub-discovr-outer-wrapper {
+    right: 10px;
+}
+}
+.iz-news-hub-discovr-outer-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+.iz-news-hub-sidebar-container, .iz-news-hub-stickybar-callout, .iz-news-hub-discovr-outer-wrapper {
+    z-index: 2147483645;
+}
+div[Attributes Style] {
+    unicode-bidi: isolate;
+}
+#iz-news-hub-bell-icon-tooltip {
+        display: none;
+        font-size: 14px;
+        transition: all ease-in 0.1s;
+        position: absolute;
+        top: 9px;
+        right: 54px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 4px;
+        white-space: nowrap;
+        padding: 4px 10px;
+        line-height: 18px;
+      }
+#iz-news-hub-floating-icon:hover #iz-news-hub-bell-icon-tooltip {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+      #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-left #iz-news-hub-bell-icon-tooltip,
+      #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-left #iz-news-hub-bell-icon-tooltip {
+        right: unset;
+        left: 54px;
+      }
+      #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-left #iz-news-hub-bell-icon-tooltip,
+      #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-right #iz-news-hub-bell-icon-tooltip {
+        top: 4px;
+        margin-top: 4px;
+      }
+
+      @media screen and (min-width: 481px) {
+        .iz-news-hub-social-link:hover .iz-news-hub-icon-tooltip {
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+
+        /* solution for only for vtvgujrati website START */
+        .noJS #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-right,
+        .active-mob-menu #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-right {
+          bottom: 137px !important;
+          right: 20px;
+        }
+
+        .noJS #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-right #iz-news-hub-icon-discoverability,
+        .noJS #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-right #iz-news-hub-icon-discoverability {
+          right: -14px;
+        }
+
+        .noJS #iz-news-hub-notification-container.iz-news-hub-bottom-right {
+          bottom: 137px;
+          right: 13px;
+        }
+
+        .noJS #iz-news-hub-notification-container.iz-news-hub-bottom-left {
+          bottom: 137px;
+          left: 13px;
+        }
+
+        /* solution for only for vtvgujrati website END */
+        .iz-news-hub-animate-pop-out {
+          animation: iz-news-hub-animate-pop-out 0.5s 1 forwards;
+          -webkit-animation: iz-news-hub-animate-pop-out 0.5s 1 forwards;
+        }
+
+        @keyframes iz-news-hub-animate-pop-out {
+          0% {
+            transform: translateX(100%);
+          }
+
+          50% {
+            transform: translateX(60%);
+          }
+
+          100% {
+            transform: translateX(100%);
+          }
+        }
+
+        #iz-news-hub-notification-header,
+        #iz-news-hub-posts-header {
+          max-width: unset;
+        }
+
+        #iz-news-hub-notification-container .iz-news-hub-notification-share-btn {
+          display: flex;
+        }
+
+        #iz-news-hub-notification-container .iz-news-hub-notification-unread-indicator {
+          top: 45%;
+        }
+
+        .iz-news-hub-post-text-container .iz-news-hub-share-before {
+          background: transparent !important;
+        }
+
+        .iz-news-hub-end-text {
+          align-items: start;
+          padding-bottom: 40px;
+        }
+
+        #iz-news-hub-bell-icon-tooltip {
+          right: 0;
+        }
+
+        #iz-news-hub-floating-icon:hover #iz-news-hub-bell-icon-tooltip {
+          display: none;
+        }
+
+        #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-bottom-left #iz-news-hub-bell-icon-tooltip,
+        #iz-news-hub-discovr-outer-wrapper.iz-news-hub-floating-icon-container-top-left #iz-news-hub-bell-icon-tooltip {
+          right: unset;
+          left: 0;
+        }
+      }
+      svg {
+            height: 38px;
+            width: 38px;
+            stroke: white;
+            fill: #1d85fc;
+            transform: rotate(0deg);
+            enable-background: new 0 0 50 30;
+            viewBox: 0 0 50 30;
+            x: 0px;
+            y: 0px;
+            display: block;
+        }
+</style>
+<div class="iz-news-hub-discovr-outer-wrapper iz-news-hub-floating-icon-container-bottom-right" dir="auto"
+      id="iz-news-hub-discovr-outer-wrapper">
+  <div class="iz-news-hub-floating-icon-container iz-news-hub-floating-icon-container-bottom-right iz-news-hub-subscribe"
+        id="iz-news-hub-floating-icon">
+    <span id="iz-news-hub-bell-icon-tooltip">Latest Offers</span>
+      <div class="iz-news-hub-ripple-bell">
+        <svg class="iz-news-hub-bell"  viewBox="0 0 50 30"
+             xml:space="preserve" style="display: block;">
+          <g class="" >
+            <path fill="none"  fill-rule="evenodd" stroke-width="1.5"
+                clip-rule="evenodd" stroke="red" stroke-miterlimit="10"
+                d="M28.7,25 c0,1.9-1.7,3.5-3.7,3.5s-3.7-1.6-3.7-3.5s1.7-3.5,3.7-3.5S28.7,23,28.7,25z"
+                style="fill: rgb(29, 133, 252);" class=""></path>
+            <path  class="iz-newsHub-bell-shell" fill-rule="evenodd" clip-rule="evenodd"
+                stroke="red" stroke-width="2" stroke-miterlimit="100"
+                d="M35.9,21.8c-1.2-0.7-4.1-3-3.4-8.7c0.1-1,0.1-2.1,0-3.1h0c-0.3-4.1-3.9-7.2-8.1-6.9c-3.7,0.3-6.6,3.2-6.9,6.9h0 c-0.1,1-0.1,2.1,0,3.1c0.6,5.7-2.2,8-3.4,8.7c-0.4,0.2-0.6,0.6-0.6,1v1.8c0,0.2,0.2,0.4,0.4,0.4h22.2c0.2,0,0.4-0.2,0.4-0.4v-1.8 C36.5,22.4,36.3,22,35.9,21.8L35.9,21.8z"
+                style="fill: rgb(29, 133, 252);"></path>
+          </g>
+        </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>
